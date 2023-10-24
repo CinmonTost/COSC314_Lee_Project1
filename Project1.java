@@ -34,11 +34,11 @@ public class Project1 {
 
     }
 
-    public static void printReflexiveOrNot(int [][] matrix) //reflexive = all diagonal elements are 1
+    public static void printReflexiveOrNot(int[][] matrix) //reflexive = all diagonal elements are 1
     {
-        for(int i = 0; i < 10; i++) //using guard clause to clean up code
+        for (int i = 0; i < 10; i++) 
         {
-            if (matrix[i][i]!= 1)
+            if (matrix[i][i]!= 1) // checks array positions of [0][0], [1][1], [2][2] ...
             {
                 System.out.println("Reflexive: no");
                 return;
@@ -47,9 +47,9 @@ public class Project1 {
         System.out.println("Reflexive: yes");
     }
     
-    public static void printAntiReflexiveOrNot(int [][] matrix) // if any diagonal elements is 1, then it is not anti-reflexive, else yes
+    public static void printAntiReflexiveOrNot(int[][] matrix) // no diagonal value can be a 1
     {
-        for(int i = 0; i < 10; i++) //guard clause
+        for (int i = 0; i < 10; i++) 
         {
             if (matrix[i][i]==1)
             {
@@ -60,14 +60,14 @@ public class Project1 {
         System.out.println("Antireflexive: yes");
     }
 
-    public static void printSymmetricOrNot(int [][] matrix) // if the matrix is symmetric(which means matrix and its transpose looks same), then it is symmetric, else not
+    public static void printSymmetricOrNot(int[][] matrix) // if the matrix's transpose is identical
     {
         
-        for (int i = 0; i < 10; i++) //guard clause
+        for (int i = 0; i < 10; i++) 
         {
             for (int j = i + 1; j < 10; j++)
             {
-                if (matrix[i][j]!=matrix[j][i])
+                if (matrix[i][j] != matrix[j][i])
                 {
                     System.out.println("Symmetric: no");
                     return;
@@ -77,13 +77,13 @@ public class Project1 {
         System.out.println("Symmetric: yes");
     }
 
-    public static void printAntiSymmetricOrNot(int [][] matrix) // if any element of matrix[i][j] and matrix[j][i] is 1, then it is not anti-symmetric, else yes
+    public static void printAntiSymmetricOrNot(int[][] matrix) // check if value of [i][j] and [j][i] are the same
     {
-        for (int i = 0; i < 10; i++) //guard clause
+        for (int i = 0; i < 10; i++) 
         {
             for (int j = i + 1; j < 10; j++)
             {
-                if (matrix[i][j] == 1 && matrix[j][i] == 1)
+                if (matrix[i][j] == 1 && matrix[j][i] == 1) //checks if values are the same
                 {
                     System.out.println("Antisymmetric: no");
                     return;

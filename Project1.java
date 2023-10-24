@@ -16,7 +16,7 @@ public class Project1 {
         //reading the input file and stores them into a new file
         Scanner newFile = new Scanner(new File(file));
 
-        for (int i = 0; i < 10; i++)//need a nested loop because it's a multidimensional array
+        for (int i = 0; i < 10; i++) //need a nested loop because it's a multidimensional array
         {
             for (int j = 0; j < 10; j++)
             {

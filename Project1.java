@@ -9,7 +9,9 @@ public class Project1 {
         System.out.print("Type the name of the file you want to check: "); //user inputs filename
         String file = sc.nextLine();
         sc.close();
+
         int matrixSize = 10;
+        
         int[][] matrix = new int[matrixSize][matrixSize]; //creates a matrix 
         System.out.println();
         System.out.println("File input: " + file + "\n");
@@ -69,7 +71,7 @@ public class Project1 {
         System.out.println("Antireflexive: yes");
     }
 
-    public static void printSymmetricOrNot(int[][] matrix) // if the matrix's transpose is identical
+    public static void printSymmetricOrNot(int[][] matrix) // if the matrix's inverses are the same
     {
         int matrixSize = 10;
         for (int i = 0; i < matrixSize; i++) 
@@ -78,7 +80,7 @@ public class Project1 {
             {
                 if (matrix[i][j] != matrix[j][i])
                 {
-                    System.out.println("Symmetric: no");
+                    System.out.println("Symmetric: no"); //immediate no if element aren't inverses
                     return;
                 }
             }
@@ -86,7 +88,7 @@ public class Project1 {
         System.out.println("Symmetric: yes");
     }
 
-    public static void printAntiSymmetricOrNot(int[][] matrix) // check if value of [i][j] and [j][i] are the same
+    public static void printAntiSymmetricOrNot(int[][] matrix) // checks for inverses
     {
         int matrixSize = 10;
         for (int i = 0; i < matrixSize; i++) 
@@ -95,7 +97,7 @@ public class Project1 {
             {
                 if (matrix[i][j] == 1 && matrix[j][i] == 1) //checks if values are the same
                 {
-                    System.out.println("Antisymmetric: no");
+                    System.out.println("Antisymmetric: no"); //immediate no if elements are inverses
                     return;
                 }
             }

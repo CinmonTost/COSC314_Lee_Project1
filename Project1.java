@@ -11,7 +11,7 @@ public class Project1 {
         sc.close();
 
         int matrixSize = 10;
-        
+
         int[][] matrix = new int[matrixSize][matrixSize]; //creates a matrix 
         System.out.println();
         System.out.println("File input: " + file + "\n");
@@ -54,18 +54,18 @@ public class Project1 {
     public static void printAntiReflexiveOrNot(int[][] matrix) // no diagonal value can be a 1
     {   
         int matrixSize = 10;
-        int count = 0; //counting 1s
+        //int count = 0; //counting 1s
         for (int i = 0; i < matrixSize; i++) 
         {
             if (matrix[i][i] == 1)
-            {
-                count++;
+            {   
+                // if (count > 0 && count <= 10) //if some but not all diagonals are 1s
+                // {
+                System.out.println("Antireflexive: no"); //the moment there is a 1, not anti-reflexive
+                return;
+                // }
+                // count++;
             }
-        }
-        if (count > 0 && count <= 10) //if some but not all diagonals are 1s
-        {
-            System.out.println("Antireflexive: no");
-            return;
         }
         
         System.out.println("Antireflexive: yes");

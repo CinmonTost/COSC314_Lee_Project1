@@ -1,0 +1,24 @@
+File input: Matrix1.txt
+
+Reflexive: no
+Antireflexive: no
+Symmetric: no
+Antisymmetric: yes
+
+-------------------------
+
+File input: Matrix2.txt
+
+Reflexive: yes
+Antireflexive: no
+Symmetric: yes
+Antisymmetric: no
+
+-------------------------
+
+File input: Matrix3.txt
+
+Reflexive: no
+Antireflexive: yes
+Symmetric: no
+Antisymmetric: no

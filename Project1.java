@@ -59,12 +59,8 @@ public class Project1 {
         {
             if (matrix[i][i] == 1)
             {   
-                // if (count > 0 && count <= 10) //if some but not all diagonals are 1s
-                // {
                 System.out.println("Antireflexive: no"); //the moment there is a 1, not anti-reflexive
                 return;
-                // }
-                // count++;
             }
         }
         

@@ -31,3 +31,12 @@ Reflexive: no
 Antireflexive: no
 Symmetric: no    
 Antisymmetric: no
+
+-------------------------
+
+File input: AdditionalMatrix2.txt
+
+Reflexive: yes
+Antireflexive: no
+Symmetric: yes
+Antisymmetric: no
